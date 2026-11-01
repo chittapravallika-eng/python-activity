@@ -61,6 +61,25 @@ END IF
 STOP
 
 ## 4. Flowchart 
+```mermaid
+
+flowchart TD
+    A([START]) --> B[/Enter consultation charges/]
+    B --> C[/Enter test charges/]
+    C --> D[/Enter treatment charges/]
+    D --> E[Calculate total bill]
+    E --> F{Total >= 5000?}
+    F -->|Yes| G[Discount = Total * 0.10]
+    F -->|No| H[Discount = 0]
+    G --> I[Final bill = Total - Discount]
+    H --> I
+    I --> J[/Display total, discount and final bill/]
+    J --> K{Final bill >= 5000?}
+    K -->|Yes| L[Display High bill]
+    K -->|No| M[Display Regular bill]
+    L --> N([STOP])
+    M --> N
+```
 ## 5. Sample Input
 Enter consultation charge: 2000
 Enter test charges: 2500
