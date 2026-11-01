@@ -81,6 +81,8 @@ Enter electricity units: 250
 Units consumed: 250
 Fixed charge: Rs. 50
 Total electricity bill: Rs. 800
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/dececf58-71ae-4305-91c9-ae283c4e7eec" />
+
 ## 7. Calculation
 
 - First 100 units = 100 × 2 = Rs. 200
