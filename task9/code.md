@@ -81,3 +81,5 @@ Enter quantity: 5
 Total amount: Rs. 2500.0
 Discount: Rs. 250.0
 Final bill: Rs. 2250.0
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/6299e5c2-01f7-44ee-a673-23ed1bf99d32" />
+
