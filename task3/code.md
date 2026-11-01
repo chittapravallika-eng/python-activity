@@ -91,9 +91,8 @@ Enter budget in rupees: 40000
 ## 6. Sample Output
 
 Total foreign expenses: 450
-
 Total expenses in rupees: Rs. 38250.0
-
 Budget status: Within budget
-
 Largest expense: 200
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/e2d6f782-e7f6-433a-8821-ee583336dc9b" />
+
