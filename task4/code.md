@@ -90,3 +90,5 @@ Received: 50
 Dispatched: 100
 Closing stock: 100
 Stock sufficient
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/c5119e4a-4796-4ac8-b329-81417d36141a" />
+
