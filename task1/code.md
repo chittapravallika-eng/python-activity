@@ -69,6 +69,8 @@ Choose class: 1
 
 Final railway fare: Rs. 320.0
 
+<img width="2880" height="1800" alt="Screenshot 2026-11-01 212559" src="https://github.com/user-attachments/assets/64b71772-579c-457e-97a5-47fa77c669e2" />
+
 
 ## 6. Calculation
 
@@ -81,3 +83,4 @@ Final railway fare: Rs. 320.0
  Reservation charge = Rs. 50
 
 Final Railway Fare = Rs. 320.0
+
