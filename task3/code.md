@@ -64,7 +64,24 @@ DISPLAY largest_expense
 STOP
 
 
-## 4. Flowchart (Mermaid)
+## 4. Flowchart 
+```mermaid
+
+flowchart TD
+    A([START]) --> B[Initialize expenses list]
+    B --> C[/Enter exchange rate/]
+    C --> D[/Enter budget in rupees/]
+    D --> E[Calculate total foreign expenses using sum]
+    E --> F[Convert expenses into rupees]
+    F --> G[/Display total foreign expenses and total rupees/]
+    G --> H{Total rupees <= Budget?}
+    H -->|Yes| I[Display Within budget]
+    H -->|No| J[Display Over budget]
+    I --> K[Find largest expense using max]
+    J --> K
+    K --> L[/Display largest expense/]
+    L --> M([STOP])
+```
 
 ## 5. Sample Input
 
