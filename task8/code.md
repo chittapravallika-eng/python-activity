@@ -80,3 +80,5 @@ Enter monthly data usage in GB: 15
 ## 6. Sample Output
 Best plan: Plan B
 Cost: Rs. 299
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/495a2d83-5464-49e8-8cb5-6fe52f270654" />
+
