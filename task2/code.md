@@ -66,7 +66,23 @@ END FOR
 STOP
 
 
-### 4. Flowchart (Mermaid)
+### 4. Flowchart 
+```mermaid
+
+flowchart TD
+    A([START]) --> B[/Enter number of students/]
+    B --> C[Create empty students list]
+    C --> D[/Enter name, marks, attendance and income/]
+    D --> E{Marks >= 75 AND Attendance >= 75 AND Income <= 200000?}
+    E -->|Yes| F[Add student to eligible list]
+    E -->|No| G[Skip student]
+    F --> H{More students?}
+    G --> H
+    H -->|Yes| D
+    H -->|No| I[Sort students by marks descending]
+    I --> J[/Display eligible scholarship students/]
+    J --> K([STOP])
+```
 
 
 ### 5. Sample Input
