@@ -73,6 +73,25 @@ DISPLAY net_salary
 STOP
 
 ## 4. Flowchart
+```mermaid
+
+flowchart TD
+    A([START]) --> B[/Enter employee name/]
+    B --> C[/Enter basic pay/]
+    C --> D[/Enter allowances/]
+    D --> E[/Enter overtime and incentives/]
+    E --> F[Calculate gross salary]
+    F --> G{Gross salary <= 20000?}
+    G -->|Yes| H[Deduction = 0]
+    G -->|No| I{Gross salary <= 40000?}
+    I -->|Yes| J[Deduction = Gross salary * 0.05]
+    I -->|No| K[Deduction = Gross salary * 0.10]
+    H --> L[Calculate net salary]
+    J --> L
+    K --> L
+    L --> M[/Display formatted salary statement/]
+    M --> N([STOP])
+```
 ## 5. Sample Input
 
 Enter employee name: Ravi
