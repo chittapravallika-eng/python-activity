@@ -67,6 +67,25 @@ END IF
 
 STOP
 ### 4. Flowchart 
+```mermaid
+
+flowchart TD
+    A([START]) --> B[/Enter attended classes/]
+    B --> C[/Enter conducted classes/]
+    C --> D[/Enter required attendance percentage/]
+    D --> E{Valid attendance details?}
+    E -->|No| F[/Display Invalid attendance details/]
+    E -->|Yes| G{Current attendance >= Required?}
+    G -->|Yes| H[/Display You are already eligible/]
+    G -->|No| I[Set extra = 0]
+    I --> J{New attendance >= Required?}
+    J -->|No| K[extra = extra + 1]
+    K --> J
+    J -->|Yes| L[/Display minimum consecutive classes/]
+    F --> M([STOP])
+    H --> M
+    L --> M
+```
 
 ## 5. Sample Input
 Enter classes attended: 60
