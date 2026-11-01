@@ -93,5 +93,6 @@ Enter total classes conducted: 100
 Enter required attendance percentage: 75
 ## 6. Sample Output
 Minimum consecutive classes to attend: 60
-<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/50e5bffe-3af4-4353-9f33-641c95a162e4" />
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/820a1ad3-2e60-44f9-b5af-1389d2f01a65" />
+
 
