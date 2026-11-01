@@ -108,6 +108,8 @@ Basic Pay: Rs. 25000.0
 Allowances: Rs. 5000.0
 Overtime Pay: Rs. 2000.0
 Incentives: Rs. 3000.0
+<img width="2880" height="1800" alt="image" src="https://github.com/user-attachments/assets/251c7f87-d7e2-4752-af80-c556c2c82682" />
+
 
 Gross Salary: Rs. 35000.0
 Total Deduction: Rs. 1750.0
