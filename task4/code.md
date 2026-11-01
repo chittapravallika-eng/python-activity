@@ -1,80 +1,92 @@
-# Foreign Travel Expense and Budget Calculator Using Python
-
 ## 1. Problem Statement
 
-Write a Python program to calculate the total foreign travel expenses and convert them into Indian Rupees using the given exchange rate.
-
-The program should:
-
-- Store multiple foreign expenses in a list.
-- Accept the exchange rate in rupees.
-- Accept the total budget in rupees.
-- Calculate the total foreign expenses using the `sum()` function.
-- Convert the total expenses into Indian Rupees.
-- Check whether the expenses are within the budget or over the budget.
-- Display the largest expense using the `max()` function.
+To develop a Python program to manage inventory stock for different products. The program calculates the closing stock using opening stock, received stock, and dispatched stock. If the closing stock is less than 50, it displays "Replenishment required"; otherwise, it displays "Stock sufficient".
 
 ## 2. Algorithm
 
-1. Start the program.
-2. Initialize a list containing foreign expenses.
-3. Enter the exchange rate in rupees.
-4. Enter the total budget in rupees.
-5. Calculate the total foreign expenses using `sum()`.
-6. Convert foreign expenses into Indian Rupees by multiplying the total expenses by the exchange rate.
-7. Display the total foreign expenses.
-8. Display the total expenses in Indian Rupees.
-9. Check whether the total expenses are less than or equal to the budget.
-10. If yes, display "Within budget".
-11. Otherwise, display "Over budget".
-12. Find the largest expense using `max()`.
-13. Display the largest expense.
-14. Stop the program.
+1. Start.
+2. Initialize product names, opening stock, received stock, and dispatched stock.
+3. Repeat for each product using a `for` loop.
+4. Calculate closing stock:
+
+   Closing Stock = Opening Stock + Received − Dispatched
+5. Display product details and closing stock.
+6. If closing stock is less than 50, display "Replenishment required".
+7. Otherwise, display "Stock sufficient".
+8. Stop.
 
 ## 3. Pseudocode
-
 START
 
-expenses = [100, 200, 150]
+Initialize products = ["Books", "Pens", "Notebooks"]
+Initialize opening = [100, 200, 150]
+Initialize received = [50, 100, 50]
+Initialize dispatched = [80, 120, 100]
 
-INPUT exchange_rate
-INPUT budget
+FOR each product index i:
+    closing = opening[i] + received[i] - dispatched[i]
 
-total_foreign = SUM(expenses)
+    DISPLAY products[i]
+    DISPLAY opening[i]
+    DISPLAY received[i]
+    DISPLAY dispatched[i]
+    DISPLAY closing
 
-total_rupees = total_foreign * exchange_rate
-
-DISPLAY total_foreign
-DISPLAY total_rupees
-
-IF total_rupees <= budget THEN
-
-    DISPLAY "Within budget"
-
-ELSE
-
-    DISPLAY "Over budget"
-
-END IF
-
-largest_expense = MAX(expenses)
-
-DISPLAY largest_expense
+    IF closing < 50 THEN
+        DISPLAY "Replenishment required"
+    ELSE
+        DISPLAY "Stock sufficient"
+    END IF
+END FOR
 
 STOP
+## 4. Flowchart
+```mermaid
 
-## 4. Flowchart 
+flowchart TD
+    A([Start]) --> B[Initialize product and stock lists]
+    B --> C[Set i = 0]
+    C --> D{i < Number of products?}
+    D -- Yes --> E[Calculate closing = opening + received - dispatched]
+    E --> F[Display product and stock details]
+    F --> G{Closing stock < 50?}
+    G -- Yes --> H[Display Replenishment required]
+    G -- No --> I[Display Stock sufficient]
+    H --> J[Increment i by 1]
+    I --> J
+    J --> D
+    D -- No --> K([Stop])
+```
+
 
 ## 5. Sample Input
 
-Enter exchange rate in rupees: 85
-Enter budget in rupees: 40000
+The program uses predefined stock details, so no user input is required.
+
+| Product   | Opening | Received | Dispatched |
+| --------- | ------- | -------- | ---------- |
+| Books     | 100     | 50       | 80         |
+| Pens      | 200     | 100      | 120        |
+| Notebooks | 150     | 50       | 100        |
 
 ## 6. Sample Output
-Total foreign expenses: 450
+Product: Books
+Opening stock: 100
+Received: 50
+Dispatched: 80
+Closing stock: 70
+Stock sufficient
 
-Total expenses in rupees: Rs. 38250.0
+Product: Pens
+Opening stock: 200
+Received: 100
+Dispatched: 120
+Closing stock: 180
+Stock sufficient
 
-Budget status: Within budget
-
-Largest expense: 200
+Product: Notebooks
+Opening stock: 150
+Received: 50
+Dispatched: 100
+Closing stock: 100
+Stock sufficient
