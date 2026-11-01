@@ -58,6 +58,21 @@ STOP
 
 
 ## 4. Flowchart 
+```mermaid
+
+flowchart TD
+    A([START]) --> B[/Enter electricity units/]
+    B --> C{Units <= 100?}
+    C -->|Yes| D[Bill = Units * 2]
+    C -->|No| E{Units <= 200?}
+    E -->|Yes| F[Bill = 100 * 2 + remaining units * 3]
+    E -->|No| G[Bill = 100 * 2 + 100 * 3 + remaining units * 5]
+    D --> H[Add fixed charge Rs. 50]
+    F --> H
+    G --> H
+    H --> I[/Display units, fixed charge and total bill/]
+    I --> J([STOP])
+```
 
 ## 5. Sample Input
 Enter electricity units: 250
