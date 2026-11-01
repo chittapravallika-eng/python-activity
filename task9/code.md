@@ -56,6 +56,23 @@ DISPLAY final_bill
 
 STOP
 ## 4. Flowchart 
+```mermaid
+
+flowchart TD
+    A([START]) --> B[/Enter product price/]
+    B --> C[/Enter quantity/]
+    C --> D[Calculate total = price * quantity]
+    D --> E{Total >= 2000?}
+    E -->|Yes| F[Discount = Total * 0.10]
+    E -->|No| G{Total >= 1000?}
+    G -->|Yes| H[Discount = Total * 0.05]
+    G -->|No| I[Discount = 0]
+    F --> J[Final bill = Total - Discount]
+    H --> J
+    I --> J
+    J --> K[/Display total, discount and final bill/]
+    K --> L([STOP])
+```
 ## 5. Sample Input
 Enter product price: 500
 Enter quantity: 5
