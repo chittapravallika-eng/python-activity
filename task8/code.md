@@ -59,6 +59,22 @@ STOP
 
 
 ## 4. Flowchart
+```mermaid
+
+flowchart TD
+    A([START]) --> B[/Enter monthly data usage in GB/]
+    B --> C{Usage <= 10?}
+    C -->|Yes| D[Select Plan A]
+    D --> E[/Display Plan A and Rs. 199/]
+    C -->|No| F{Usage <= 20?}
+    F -->|Yes| G[Select Plan B]
+    G --> H[/Display Plan B and Rs. 299/]
+    F -->|No| I[Select Plan C]
+    I --> J[/Display Plan C and Rs. 399/]
+    E --> K([STOP])
+    H --> K
+    J --> K
+```
 ## 5. Sample Input
 Enter monthly data usage in GB: 15
 ## 6. Sample Output
