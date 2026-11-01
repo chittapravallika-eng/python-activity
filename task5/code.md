@@ -94,3 +94,5 @@ Discount: Rs. 650.0
 Final bill: Rs. 5850.0
 
 Classification: High bill
+<img width="2880" height="1800" alt="Screenshot 2026-11-01 214828" src="https://github.com/user-attachments/assets/9cd17163-d28d-4e03-9d1d-9588526850eb" />
+
