@@ -2,7 +2,7 @@
 
 ## 1. Problem Statement
 
-Write a Python program to calculate railway ticket fare based on journey distance, passenger age, and selected travel class (Sleeper or AC). Provide a 10% concession for passengers aged 60 years or above and add Rs. 50 as reservation charges. Display the final railway fare. If an invalid class is selected, display an error message.
+ Python program to calculate railway ticket fare based on journey distance, passenger age, and selected travel class (Sleeper or AC). Provide a 10% concession for passengers aged 60 years or above and add Rs. 50 as reservation charges. Display the final railway fare. If an invalid class is selected, display an error message.
 
 ## 2. Algorithm
 
