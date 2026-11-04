@@ -1,8 +1,7 @@
 # Student Attendance Eligibility Calculator Using Python
 
 ## 1. Problem Statement
-
-Write a Python program to check whether a student is eligible based on their attendance percentage.
+ Python program to check whether a student is eligible based on their attendance percentage.
 
 The program should:
 
